@@ -8,10 +8,13 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        return'index()';
+        $customer=[1,2,3,4,5];
+        return view('customer.index')
+        ->with(['customer'=>$customer]);
     }
     public function show($id)
     {
-        return'show()'.$id;
+        return view('customer.show')
+        ->with(['id'=>$id]);
     }
 }
