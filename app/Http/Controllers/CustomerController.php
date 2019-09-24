@@ -17,4 +17,12 @@ class CustomerController extends Controller
         return view('customer.show')
         ->with(['id'=>$id]);
     }
+    public function create()
+    {
+        return view('customer.create');
+    }
+    public function store()
+    {
+        return 'store()';
+    }
 }

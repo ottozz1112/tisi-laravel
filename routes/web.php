@@ -39,5 +39,6 @@ Route::get('/about','staticController@about');
 route::get('/name/{surname?}','staticController@surname');
 
 route::get('/customer','CustomerController@index');
+route::post('/customer','CustomerController@store');
+route::get('/customer/create','CustomerController@create');
 route::get('/customer/{id}','CustomerController@show');
-
